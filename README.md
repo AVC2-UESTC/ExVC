@@ -53,5 +53,5 @@ CUDA_VISIBLE_DEVICES=0 python train.py -c configs/exvc.json -m exvc
 ## References
 - [FreeVC] (https://github.com/OlaWod/FreeVC)
 - [Conformer](https://github.com/sooftware/conformer)
-- [MoE] (https://gist.github.com/ruvnet/0928768dd1e4af8816e31dde0a0205d5- Mixute of experts)
+- [MoE] (https://gist.github.com/ruvnet/0928768dd1e4af8816e31dde0a0205d5- Mixture of experts)
 - [FilM] https://arxiv.org/abs/1709.07871 
