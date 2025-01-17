@@ -1,0 +1,10 @@
+__pycache__/
+dataset/DUMMY
+dataset/DUMMY_ART
+dataset/spk
+filelists
+dataset/wavlm
+Untitled.ipynb
+pretrained_chkpt
+wavlm/WavLM-Large.pt
+

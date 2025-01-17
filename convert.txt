@@ -1,0 +1,4 @@
+sample1|audio_samples/src_1.wav|audio_samples/tgt_1.wav
+sample2|audio_samples/src_2.wav|audio_samples/tgt_2.wav
+sample3|audio_samples/src_3.wav|audio_samples/tgt_3.wav
+sample4|audio_samples/src_4.wav|audio_samples/tgt_4.wav

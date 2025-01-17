@@ -1,0 +1,11 @@
+glob2==0.7
+tqdm==4.62.3
+librosa==0.9.1
+numpy==1.26.0
+scipy==1.12.0
+tensorboard==2.7.0
+torch==2.0.1
+torchvision==0.15.2
+webrtcvad==2.0.10
+protobuf==3.20.3
+matplotlib==3.7.0
