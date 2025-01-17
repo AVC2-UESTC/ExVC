@@ -30,8 +30,7 @@ CUDA_VISIBLE_DEVICES=0 python convert_exvc.py --txtpath convert.txt --outdir out
 1. Preprocess
 
 ```python
-python downsample.py --in_dir </path/to/VCTK/wavs>
-ln -s dataset/vctk-16k DUMMY
+python downsample.py --in_dir </path/to/VCTK/wavs> ln -s dataset/vctk-16k DUMMY
 
 CUDA_VISIBLE_DEVICES=0  python gen_art_dataset.py 
 
@@ -44,7 +43,7 @@ CUDA_VISIBLE_DEVICES=0 python preprocess_spk.py
 
 # run this to preprocess the ssl features
 CUDA_VISIBLE_DEVICES=0 python preprocess_ssl.py
-
+```
 2. Train
 
 ```python
