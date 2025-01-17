@@ -15,7 +15,7 @@ provided at: https://tksavy.github.io/exvc/.
 
 5. Download the [VCTK](https://datashare.ed.ac.uk/handle/10283/3443) dataset (for training only)
 
-6. Download the [LibriTTS-R] (train_clean_360) https://www.openslr.org/resources/141/train_clean_360.tar.gz . Follow instruction on how to create a artificial dataset from here. 
+6. Download the [LibriTTS-R] (train_clean_360) https://www.openslr.org/resources/141/train_clean_360.tar.gz . Follow instruction on how to create a artificial dataset from [here] (https://github.com/AVC2-UESTC/ExVC/blob/main/DATASET_GENERATION_HINTS.md). 
 
 ## Inference
 
