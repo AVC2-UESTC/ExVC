@@ -23,7 +23,7 @@ You just need a txt file with this format. the output will be saved in the desti
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--hpfile", type=str, default="configs/exvc.json", help="path to json config file")
-    parser.add_argument("--ptfile", type=str, default="pretrained_chkpt/exvc_700k.pth", help="path to pth file")  
+    parser.add_argument("--ptfile", type=str, default="./pretrained_chkpt/exvc_ckpt.pt", help="path to pth file")  
     parser.add_argument("--txtpath", type=str, default="convert.txt", help="path to txt file")
     parser.add_argument("--outdir", type=str, default="./output_exvc", help="path to output dir")
     parser.add_argument("--use_timestamp", default=False, action="store_true")
@@ -39,9 +39,20 @@ if __name__ == "__main__":
         **hps.model).cuda()
     _ = net_g.eval()
 
+    # If you face network issue, try to run this code in the command line: export HF_ENDPOINT=https://hf-mirror.com
+    # download ExVC checkpoint from huggingface
+    print("Downloading checkpoint from huggingface...")
+    # Ensure the save directory exists
+    os.makedirs("./pretrained_chkpt", exist_ok=True)
+    checkpoint_path = hf_hub_download(repo_id="Teksavy/ExVC", filename="exvc_ckpt.pt", local_dir="./pretrained_chkpt")
+
     
     print("Loading checkpoint...")
     _ = utils.load_checkpoint(args.ptfile, net_g, None, True)
+
+    print("Downloading Wavlm checkpoint from huggingface...")
+    os.makedirs("./wavlm", exist_ok=True)
+    checkpoint_path = hf_hub_download(repo_id="Teksavy/ExVC", filename="WavLM-Large.pt", local_dir="./wavlm")
 
     print("Loading WavLM for content...")
     cmodel = utils.get_cmodel(0)
