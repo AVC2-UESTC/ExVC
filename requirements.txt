@@ -9,3 +9,4 @@ torchvision==0.15.2
 webrtcvad==2.0.10
 protobuf==3.20.3
 matplotlib==3.7.0
+huggingface_hub
