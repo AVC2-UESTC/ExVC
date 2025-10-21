@@ -13,6 +13,7 @@ from wavlm import WavLM, WavLMConfig
 from speaker_encoder.voice_encoder import SpeakerEncoder
 import logging
 logging.getLogger('numba').setLevel(logging.WARNING)
+from huggingface_hub import hf_hub_download
 
 '''
 The  input text  "--txtpath" file which contain the mappings of the conversion has this format : output_file_name|source—speech_file_path|reference—speech_file_path
