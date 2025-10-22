@@ -56,4 +56,4 @@ CUDA_VISIBLE_DEVICES=0 python train.py -c configs/exvc.json -m exvc
 - [WavLM] https://github.com/microsoft/unilm/tree/master/wavlm
 
 ### Contact
-You can DM at 2672291403ATqq.com
+Email: 2672291403ATqq.com
