@@ -54,3 +54,6 @@ CUDA_VISIBLE_DEVICES=0 python train.py -c configs/exvc.json -m exvc
 - [MoE] (https://gist.github.com/ruvnet/0928768dd1e4af8816e31dde0a0205d5- Mixture of experts)
 - [FilM] https://arxiv.org/abs/1709.07871 
 - [WavLM] https://github.com/microsoft/unilm/tree/master/wavlm
+
+### Contact
+You can DM at 2672291403ATqq.com
